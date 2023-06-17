@@ -21,15 +21,6 @@ class NetworkPrinterDevice(NetworkDevice):
         except (socket.error, AttributeError):
             print("Error write data")
 
-    def write_file(self, data: bytes) -> None:
-
-        try:
-
-            self.socket.sendfile(data)
-
-        except (socket.error, AttributeError):
-            print("Error write data")
-
     def disconnect(self) -> None:
 
         time.sleep(self.sleep_after_print_in_seconds)
