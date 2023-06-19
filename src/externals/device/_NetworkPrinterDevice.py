@@ -24,4 +24,4 @@ class NetworkPrinterDevice(NetworkDevice):
     def disconnect(self) -> None:
 
         time.sleep(self.sleep_after_print_in_seconds)
-        self._shutdown_and_close_connection()
+        super(NetworkPrinterDevice, self).disconnect()

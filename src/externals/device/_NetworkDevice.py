@@ -38,10 +38,6 @@ class NetworkDevice(Device):
             print("Error getting socket connection: [{}]".format(repr(e)))
 
     def disconnect(self) -> None:
-        self._shutdown_and_close_connection()
-
-    def _shutdown_and_close_connection(self) -> None:
-
         try:
             try:
                 self.socket.shutdown(socket.SHUT_RDWR)
