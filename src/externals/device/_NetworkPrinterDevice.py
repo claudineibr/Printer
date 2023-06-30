@@ -1,5 +1,6 @@
 import socket
 import time
+
 from typing import Optional
 
 from ._NetworkDevice import NetworkDevice

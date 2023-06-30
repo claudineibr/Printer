@@ -1,5 +1,3 @@
-import time
-
 from src.externals.device import NetworkPrinterDevice
 
 
